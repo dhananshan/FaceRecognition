@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Daimler";
+}
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Camera</div>
+                <div class="panel-body">
+                    <div id="my_camera"></div>
+                    <!-- A button for taking snaps -->
+                    <form>
+                        <br />
+                        <br />
+                        <input type="button" class="btn btn-success" value="Recognize" onClick="take_snapshot(1)" style="width: 95%;">
+                        <br />
+                        <br />
+                        <div>
+                            <input type="text" style="width: 95%;" id="name" />
+                            <br />
+                            <br />
+                            <input type="button" class="btn btn-warning" value="Train" onClick="take_snapshot(2)" style="width: 95%;">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Captured Photo</div>
+                <div class="panel-body">
+                    <div id="results">Your captured image will appear here...</div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Result</div>
+                <div class="panel-body">
+                    <div id="user" style="    font-size: 90px; color: red;"> </div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
